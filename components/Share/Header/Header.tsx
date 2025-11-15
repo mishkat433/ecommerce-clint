@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Topbar from './Topbar';
+import NavBar from './NavBar';
 
 
 
@@ -9,7 +10,7 @@ const Header = () => {
         <div className=''>
 
             <Topbar />
-            {/* <NavBar /> */}
+            <NavBar />
         </div>
     );
 };

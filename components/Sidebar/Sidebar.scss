@@ -40,11 +40,11 @@
         }
 
         .menu-text {
-            color: #7c7c7c;
             font-size: 0.8rem;
             line-height: 1rem;
             font-weight: 500;
             transition: 0.3s;
+
         }
 
         &:hover {
@@ -58,6 +58,8 @@
             }
 
         }
+
+
     }
 
     .active_side_Menu {
