@@ -1,0 +1,31 @@
+import type { Metadata } from "next";
+import "./globals.css";
+import Header from "@/components/Share/Header/Header";
+import SidebarItems from "@/components/Sidebar/SidebarItems";
+
+export const metadata: Metadata = {
+  title: "Grocery Store",
+  description: "An Online Shopping Experience",
+};
+
+export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
+  return (
+    <html lang="en">
+      <body >
+        <div className="flex ">
+          <div className="lg:w-[6%] bg-white h-screen">
+            <SidebarItems />
+          </div>
+          <div className="lg:w-[94%]">
+            <Header />
+            <div className="px-5">
+              {children}
+            </div>
+          </div>
+        </div>
+      </body>
+    </html>
+  );
+}
+
+

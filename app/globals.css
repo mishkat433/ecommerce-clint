@@ -1,0 +1,213 @@
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0f989d;
+  border-radius: 5px;
+} */
+
+/* .menuitemDesign {
+  @apply text-aide-primary w-[20px] mb-1 duration-300;
+}
+
+.navbarIconDesign {
+  @apply text-xl text-icon-color hover:text-aide-primary duration-300 cursor-pointer;
+} */
+
+
+/**
+
+
+.slider_next_prev_btn {
+  @apply text-xl hover:bg-aide-primary hover:text-white rounded-[3px] duration-300 text-aide-primary cursor-pointer;
+}
+
+.moreSise_and_variants_btn {
+  @apply bg-[#9CE5CB] py-2 w-full rounded-3xl hover:bg-[#70e9be] duration-300;
+}
+
+.section_leftSide_btn {
+  @apply cursor-pointer hover:text-aide-primary duration-300;
+}
+
+.linkText {
+  @apply text-blue-text hover:text-aide-primary duration-300 underline;
+}
+
+
+.pb-default {
+  @apply mb-10 md:mb-12 lg:mb-16
+}
+
+/* side Menu */
+
+/* 
+.myProfileGeneralMenu {
+  @apply flex items-center justify-between border-b-[2px] border-[#F7F7F9] px-2 py-2 cursor-pointer
+}
+
+.myProfileGeneralMenuIcon {
+  @apply bg-[#F7F7F9] p-1 md:p-2 w-[30px] md:w-[40px] rounded-md flex justify-center
+}
+
+.sidementCounter {
+  @apply bg-star-color max-h-[20px] min-w-[20px] text-sm text-white text-center p-1 flex justify-center items-center rounded-full
+}
+
+/* button start */
+/* 
+.blue-button {
+  @apply bg-blue-text text-white hover:bg-white hover:text-blue-text border-1 cursor-pointer border-blue-text duration-300 rounded-lg
+}
+
+.white-button {
+  @apply bg-bg-white text-primary-text border-1 hover:bg-aide-secondary-bg cursor-pointer border-border-color duration-300 rounded-lg
+}
+
+.tracking-button {
+  @apply bg-[#E6EFFB] text-blue-text hover:bg-white hover:text-blue-text border-1 cursor-pointer border-blue-text duration-300 rounded-lg
+}
+
+.order-history-button {
+  @apply hover:bg-aide-primary hover:text-bg-white border-1 cursor-pointer border-border-color duration-300 rounded-lg
+}
+
+.yellow-button {
+  @apply bg-yellow-light border-yellow-text flex items-center justify-center gap-2.5 rounded-lg border-1 py-2 px-2 text-yellow-text;
+}
+
+.White_button {
+  @apply px-2 py-3 rounded-[4px] shadow-[0_0px_7px_-5px_black] flex items-center justify-between w-full mb-[10px] cursor-pointer;
+}
+
+.primary-button {
+  @apply bg-aide-primary text-white hover:bg-white hover:text-aide-primary cursor-pointer border-1 border-aide-primary duration-300 rounded-lg
+}
+
+.disable-button {
+  @apply bg-secondary-text border-secondary-text flex items-center justify-center gap-2.5 rounded-lg border-1 text-bg-white cursor-default
+}
+
+/* button end */
+
+
+
+/* input start */
+
+/* 
+.input-lavel {
+  @apply relative block overflow-hidden rounded-md border-1 border-border-color px-3 pt-3 shadow-sm bg-input-background
+}
+
+.input-field {
+  @apply h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-purple focus:outline-none focus:ring-0 sm:text-sm
+}
+
+/* input end */
+
+/* My Profile Full Page start */
+
+/* 
+.myProfileAllMenu {
+  @apply flex items-center justify-between p-2 rounded-lg cursor-pointer hover:bg-menu-bg duration-150;
+}
+
+.myProfileAllMenuIcon {
+  @apply text-xl;
+}
+
+/* My Profile Full Page end */
+
+
+
+/* Product Card Details Style */
+
+/* 
+.product_title_style {
+  @apply text-base font-medium leading-[140%] text-[#212121] mb-2;
+}
+
+.product_size {
+  @apply text-xs leading-4 font-normal mb-[19px] text-[#828282];
+}
+
+.product_details_text {
+  @apply text-xs text-secondary-text mb-2;
+}
+
+.product_details_text_link {
+  @apply hover:text-aide-primary duration-300;
+}
+
+.product_price_wrapper {
+  @apply flex justify-between items-center mb-5 gap-5;
+}
+
+.product_price_text {
+  @apply text-base font-bold leading-[18px] text-aide-primary;
+}
+
+.product_price_discount {
+  @apply text-error-color font-medium text-xs leading-4 w-10 text-center;
+}
+
+.view_details {
+  @apply flex gap-2 pt-[10px] items-center transition-all duration-300 text-[#787676] font-bold text-xs leading-[14px];
+}
+
+/* List View Card */
+
+/* 
+.list_view_card_icon {
+  @apply flex text-xs text-secondary-text gap-2 items-center leading-[14px] mb-3 cursor-pointer transition-all;
+}
+
+.list_view_card_icon_hover {
+  @apply w-6 h-6 p-1 rounded-[5px] transition-all;
+}
+
+/* Install App Info */
+
+/* 
+.text_gradient_style {
+  background: linear-gradient(129.86deg,
+      #21e8c4 -20.42%,
+      #179b93 -3.13%,
+      #267b87 24.22%,
+      #0f474f 72.75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Install App Info End */
