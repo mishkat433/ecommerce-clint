@@ -52,47 +52,13 @@ const SidebarItems = () => {
 
     return (
         <div className={`sidebar_content  top-0 lg:sticky duration-500 z-20  `} >
-            <div className="sidebar_menu_list_wrapper font-roboto text-3xl text-gray-700">
-                <div className={`navbar_item `} >
-                    < HiOutlineChartBar />
-                    <p className="menu-text">Category</p>
-                </div>
-                <div className={`navbar_item `}>
-                    <HiOutlineFilter />
-                    <p className="menu-text">Filter</p>
-                </div>
-                <div className={`navbar_item `} >
-                    <BiSolidOffer />
-                    <p className="menu-text">Offer Zone</p>
-                </div >
-                <div className={`navbar_item `} >
-                    <FiShoppingCart />
-                    <p className="menu-text">My Cart</p>
-                </div>
-                <div className={`navbar_item `}   >
-                    <FiPhoneCall />
-                    <p className="menu-text">Contact Us</p>
-                </div>
-                <div className={`navbar_item   `}>
-                    <HiOutlineChat />
-                    <p className="menu-text">Live Chat</p>
-                </div >
-                <div className={`navbar_item `}   >
-                    < BiCategoryAlt />
-                    <p className="menu-text">More Services</p>
-                </div >
-                <div className={`navbar_item `}  >
-                    <MdFavoriteBorder />
-                    <p className="menu-text">My Favorite</p>
-                </div >
-                <div className={`navbar_item  `}  >
-                    < HiOutlineCalendar />
-                    <p className="menu-text">Schedule Shopping</p>
-                </div >
-                <div className={`navbar_item `}>
-                    < HiOutlineUser />
-                    <p className="menu-text">My Profile</p>
-                </div >
+            <div className="sidebar_menu_list_wrapper  font-roboto text-3xl text-gray-700">
+                {sideMenuItems.map((item, index) => (
+                    <div className={`navbar_item `} >
+                        {item.icon}
+                        <p className="menu-text ">{item.name}</p>
+                    </div>
+                ))}
             </div >
         </div>
     );
