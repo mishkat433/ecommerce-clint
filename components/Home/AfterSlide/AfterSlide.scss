@@ -1,0 +1,20 @@
+.after-slider-form {
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        /* Ensures no extra space is left behind */
+    }
+
+    /* For Firefox */
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+
+    /* Optional: For broader compatibility, though the above cover most cases */
+    input[type="number"] {
+        appearance: textfield;
+    }
+
+}
