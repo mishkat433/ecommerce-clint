@@ -24,6 +24,11 @@ body {
   scroll-behavior: smooth;
 }
 
+
+.slider_next_prev_btn {
+  @apply text-xl hover:bg-teal-600 hover:text-white rounded-[3px] duration-300 text-teal-600 cursor-pointer;
+}
+
 /* ::-webkit-scrollbar {
   width: 12px;
 }
@@ -50,9 +55,7 @@ body {
 /**
 
 
-.slider_next_prev_btn {
-  @apply text-xl hover:bg-aide-primary hover:text-white rounded-[3px] duration-300 text-aide-primary cursor-pointer;
-}
+
 
 .moreSise_and_variants_btn {
   @apply bg-[#9CE5CB] py-2 w-full rounded-3xl hover:bg-[#70e9be] duration-300;
