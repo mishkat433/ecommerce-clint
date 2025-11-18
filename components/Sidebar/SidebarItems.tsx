@@ -54,7 +54,7 @@ const SidebarItems = () => {
         <div className={`sidebar_content  top-0 lg:sticky duration-500 z-20  `} >
             <div className="sidebar_menu_list_wrapper  font-roboto text-3xl text-gray-700">
                 {sideMenuItems.map((item, index) => (
-                    <div className={`navbar_item `} >
+                    <div key={index} className={`navbar_item `} >
                         {item.icon}
                         <p className="menu-text ">{item.name}</p>
                     </div>

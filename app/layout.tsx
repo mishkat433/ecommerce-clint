@@ -18,7 +18,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
           </div>
           <div className="lg:w-[94%]">
             <Header />
-            <div className="px-5">
+            <div className="">
               {children}
             </div>
           </div>
