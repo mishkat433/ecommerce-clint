@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./helperCss.scss";
 import Header from "@/components/Share/Header/Header";
 import SidebarItems from "@/components/Sidebar/SidebarItems";
 
