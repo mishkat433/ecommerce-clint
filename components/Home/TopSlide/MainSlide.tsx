@@ -6,14 +6,14 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import image1 from "../../../public/assets/slider1.png"
 
 const MainSlide = ({ }) => {
-    return <section className="">
-        <div className={``}>
+    return <section className=" flex flex-row gap-4 ">
+        <div className="w-10/12">
             <ScrollSlide />
-
         </div>
-        <div>
+        <div className="w-2/12">
             <MuteSlide />
         </div>
+
     </section >
 }
 

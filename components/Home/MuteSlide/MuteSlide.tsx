@@ -4,7 +4,8 @@ import React from 'react';
 
 const MuteSlide = ({ slide }: any) => {
     return (
-        <div className='slider_wrapper font-roboto bg-amber-200 h-2 w-2xl'>
+        <div className='slider_wrapper font-roboto bg-amber-200 h-2 border  h-60'>
+            asdfasdf
             {/* <div className='slider_content'>
                 <h1 data-aos="fade-down" data-aos-duration='1500'>{slide.text1}</h1>
                 <h2 data-aos="fade-down" data-aos-duration='2000'>{slide.text2}</h2>
