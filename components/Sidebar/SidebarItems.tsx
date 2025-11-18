@@ -52,7 +52,7 @@ const SidebarItems = () => {
 
     return (
         <div className={`sidebar_content  top-0 lg:sticky duration-500 z-20  `} >
-            <div className="sidebar_menu_list_wrapper  font-roboto text-3xl text-gray-700">
+            <div className="sidebar_menu_list_wrapper  font-roboto text-3xl text-gray-500">
                 {sideMenuItems.map((item, index) => (
                     <div key={index} className={`navbar_item `} >
                         {item.icon}
