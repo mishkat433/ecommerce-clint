@@ -35,7 +35,7 @@ const EasierToChoose = () => {
     ];
 
     return (
-        <section className='easierToChoose p-4'>
+        <section className='easierToChoose p-2 md:p-4'>
             <EasierToChooseHeading prevRef={prevRef} nextRef={nextRef} />
 
             <div className='offers_slider'>

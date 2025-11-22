@@ -14,10 +14,10 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
     <html lang="en">
       <body >
         <div className="flex ">
-          <div className="lg:w-[6%] bg-white h-screen">
+          <div className="w-full md:w-[6%] bg-white h-screen">
             <SidebarItems />
           </div>
-          <div className="lg:w-[94%]">
+          <div className="w-full md:w-[94%]">
             <Header />
             <div className="">
               {children}

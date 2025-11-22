@@ -44,15 +44,10 @@ export default function HeroSlider() {
     ];
 
     return (
-        <div className="w-full h-48 sm:h-56 md:h-64 lg:h-72 overflow-hidden">
+        <div className="w-full h-48 sm:h-56 md:h-72 overflow-hidden">
             <Swiper
                 spaceBetween={2}
                 slidesPerView={1}
-                breakpoints={{
-                    640: { slidesPerView: 1 },
-                    1024: { slidesPerView: 1 },
-                    1440: { slidesPerView: 1 },
-                }}
                 centeredSlides={true}
                 loop={true}
                 speed={1000}
@@ -62,19 +57,13 @@ export default function HeroSlider() {
                     delay: 4000,
                     disableOnInteraction: false,
                 }}
-
-
-
-
                 modules={[Autoplay, Pagination, Navigation]}
 
                 className="mySwiper h-full rounded-lg overflow-hidden"
             >
                 {fakeBannerSlides.map((slide) => (
                     <SwiperSlide key={slide.id}>
-                        <div className="  w-full h-full bg-cover bg-center  relative  flex flex-col justify-center  px-4 sm:px-8 md:px-14 lg:px-20  text-white "
-                            style={{ backgroundImage: `url(${slide.image})` }}
-                        >
+                        <div className="  w-full h-full bg-cover bg-center  relative  flex flex-col justify-center  px-10  md:px-20  text-white " style={{ backgroundImage: `url(${slide.image})` }}  >
                             <p className="text-xs sm:text-sm md:text-base opacity-90">{slide.title}</p>
                             <h1 className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-bold my-2">
                                 {slide.subtitle}
