@@ -11,7 +11,6 @@ import { useRef } from "react";
 import EasierToChooseHeading from "./EasierToChooseHeading";
 
 import offer1 from "../../../public/assets/demo-category-image.png"
-import offer2 from "../../../public/assets/Category2.avif"
 import offer3 from "../../../public/assets/offer3.jpg"
 import offer4 from "../../../public/assets/Offer4.jpg"
 
@@ -24,15 +23,15 @@ const EasierToChoose = () => {
 
     const fakeOffers = [
         { id: 1, image: offer1 },
-        { id: 2, image: offer2 },
+        { id: 2, image: offer4 },
         { id: 3, image: offer3 },
         { id: 4, image: offer4 },
         { id: 5, image: offer1 },
-        { id: 6, image: offer2 },
+        { id: 6, image: offer4 },
         { id: 7, image: offer3 },
         { id: 8, image: offer1 },
         { id: 9, image: offer4 },
-        { id: 10, image: offer2 }
+        { id: 10, image: offer3 }
     ];
 
     return (
