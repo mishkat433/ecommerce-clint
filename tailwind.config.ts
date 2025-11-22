@@ -1,21 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./app/**/*.{js,ts,jsx,tsx}", // Next.js 13+ app folder
-    "./pages/**/*.{js,ts,jsx,tsx}", // pages folder
-    "./components/**/*.{js,ts,jsx,tsx}" // components folder
-  ],
   theme: {
-    extend: {},
-  },
-  plugins: [
-    require('daisyui'), // <-- Add DaisyUI here
-  ],
-  daisyui: {
-    themes: ["light", "dark"], // You can customize your themes here
-  },
+    extend: {
+      backgroundImage: {
+        'hero-1': "url('/assets/slider1.png')",
+        'hero-2': "url('/assets/slider2.png')",
+        'hero-3': "url('/assets/slider3.png')",
+      }
+    }
+  }
 }
-  
+
+
 //   colors: {
 //     'aide-bg': '#FDFBF8',
 //     'aide-secondary-bg': '#F9FAFB',

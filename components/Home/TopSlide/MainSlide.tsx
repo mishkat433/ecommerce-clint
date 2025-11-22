@@ -1,20 +1,19 @@
 "use client"
-import { Swiper } from "swiper/react"
-import MuteSlide from "../MuteSlide/MuteSlide"
+
 import ScrollSlide from "../NavigationSlide/ScrollSlide"
-import { Autoplay, Navigation, Pagination } from "swiper/modules"
-import image1 from "../../../public/assets/slider1.png"
+import FadeSlide from "./FadeSlide/FadeSlide"
 
 const MainSlide = ({ }) => {
-    return <section className=" flex flex-row gap-4 ">
+    return <section className="flex flex-row gap-3 ml-2 h-72 ">
         <div className="w-10/12">
             <ScrollSlide />
         </div>
-        <div className="w-2/12">
-            <MuteSlide />
-        </div>
 
-    </section >
+        <div className="w-2/12 h-full ">
+            <FadeSlide />
+        </div>
+    </section>
+
 }
 
 export default MainSlide

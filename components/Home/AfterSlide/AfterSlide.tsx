@@ -20,7 +20,7 @@ const AfterSlide: NextPage = () => {
     }
 
     return (
-        <div className='after-slider bg-[#009788] flex flex-row items-center justify-center py-2 rounded'>
+        <div className='after-slider bg-[#009788] flex flex-row items-center justify-center py-2 rounded ml-2'>
             <div className='w-4/6 text-center text-white '>
                 <h4 className='text-xl'>SIGN UP AND GET YOUR FIRST 5 DELIVERY FREE</h4>
             </div>
