@@ -4,12 +4,12 @@ import ScrollSlide from "../NavigationSlide/ScrollSlide"
 import FadeSlide from "./FadeSlide/FadeSlide"
 
 const MainSlide = ({ }) => {
-    return <section className="flex flex-row gap-3 ml-2 h-72 ">
-        <div className="w-10/12">
+    return <section className=" md:flex  lg:flex-row md:gap-3 md:ml-2 md:h-72 ">
+        <div className="w-full lg:w-10/12">
             <ScrollSlide />
         </div>
 
-        <div className="w-2/12 h-full ">
+        <div className="w-full lg:w-2/12 h-full hidden md:block ">
             <FadeSlide />
         </div>
     </section>
