@@ -3,19 +3,28 @@
 import ArrowLeft from '@/components/Icons/ArrowLeft';
 import ArrowRight from '@/components/Icons/ArrowRight';
 import DealOfTheTimer from '@/components/OfferTimer/DealOfTheTimer';
-import DealOfTheDayCard from '@/components/ProductCards/DealOfTheDayCard';
 import { Navigation, Pagination } from 'swiper/modules';
 import { SwiperSlide, Swiper } from 'swiper/react';
 import dealOfTheDayBG from '../../../public/assets/deal_of_the_day_bg.png'
+import DealOfTheDayCard from '@/components/Cards/DealOfTheDayCard';
 
 
 
 const DealOfTheDaySection = () => {
 
+    const fakeData = [
+        { id: 1 },
+        { id: 2 },
+        { id: 3 },
+        { id: 4 },
+        { id: 5 },
+        { id: 6 },
+
+    ]
 
     return (
         <section
-            className='bg-no-repeat bg-top bg-cover py-20 font-roboto my-10 mb-default' style={{ backgroundImage: `url(${dealOfTheDayBG.src})` }}>
+            className='bg-no-repeat bg-top bg-cover p-10 md:py-20 font-roboto mb-default' style={{ backgroundImage: `url(${dealOfTheDayBG.src})` }}>
             <div className=" flex flex-col-reverse lg:flex-row justify-between items-center gap-2.5 container mx-auto px-[15px] xl:max-w-[1182px]">
                 <div className="flex flex-col md:flex-row lg:flex-col justify-start gap-2.5 lg:gap-0 mt-10 lg:mt-0 w-full">
                     <div>
@@ -53,7 +62,7 @@ const DealOfTheDaySection = () => {
                         className="mySwiper"
                     >
                         {
-                            [...Array(5)].map((slide: any, i) => (
+                            fakeData.map((slide: any, i) => (
                                 <SwiperSlide key={i}>
                                     <DealOfTheDayCard />
                                 </SwiperSlide>

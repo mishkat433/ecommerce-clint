@@ -87,7 +87,7 @@ const NavBar = () => {
                 <div className='ml-10'>
                     <Link href='/' className='flex gap-1 items-center '>
                         <Image priority={true} className={"h-10 w-[45px]"} src={Logo} alt="Aide-Logo" />
-                        <h1 className='text-[20px] text-aide-primary font-poppins font-semibold'>ASFEM STORE</h1>
+                        <h1 className='text-[20px] text-aide-primary font-poppins font-semibold'>GROCERY SPOT</h1>
                     </Link>
                 </div>
 

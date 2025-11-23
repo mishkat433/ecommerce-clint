@@ -74,6 +74,7 @@ export default function HeroSlider() {
                     </SwiperSlide>
                 ))}
             </Swiper>
+
         </div >
 
     );

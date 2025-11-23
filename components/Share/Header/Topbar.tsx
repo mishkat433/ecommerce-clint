@@ -47,7 +47,7 @@ const Topbar = () => {
                             <li><Link href="/">Be Partners</Link></li>
                             <li className=' z-10 cursor-pointer relative'>
                                 <div className='flex items-center  duration-300 group'>
-                                    <div className='flex gap-1 '>
+                                    <div className='flex gap-1'>
                                         <p className={` `}>{language}</p>
                                         <p className={` duration-300 group-hover:rotate-180`}> <RiArrowDownSLine className='text-xl' /> </p>
                                     </div>

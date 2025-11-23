@@ -5,7 +5,7 @@ import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import { Swiper, SwiperSlide } from "swiper/react";
 import '../../CommonSCSS/CommonScss.scss';
-import OfferZoneCard from '@/components/ProductCards/OfferZoneCard';
+import OfferZoneCard from '@/components/Cards/OfferZoneCard';
 import { Navigation, Pagination, Scrollbar } from "swiper/modules";
 import { useRef } from "react";
 import EasierToChooseHeading from "./EasierToChooseHeading";
