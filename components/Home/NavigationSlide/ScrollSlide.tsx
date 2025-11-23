@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import image1 from "../../../public/assets/slider1.png";
+import image2 from "../../../public/assets/goldMember.png";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "./NvigationSlide.scss"
 
@@ -29,7 +30,7 @@ export default function HeroSlider() {
         },
         {
             id: 2,
-            image: image1.src,
+            image: image2.src,
             title: "BIGGEST SALE OF THE YEAR",
             subtitle: "Exclusive Deals & Discounts",
             offer: "UP to 75% OFF",
