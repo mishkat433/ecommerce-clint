@@ -1,14 +1,18 @@
 import AfterSlide from "@/components/Home/AfterSlide/AfterSlide";
+import DealOfTheDaySection from "@/components/Home/DealOfTheDaySection/DealOfTheDaySection";
 import EasierToChoose from "@/components/Home/EasierToChoose/EasierToChoose";
-import MainSlide from "@/components/Home/TopSlide/MainSlide";
+import Category from "@/components/Home/ExploreByCategory/Category";
+import HomeBanner from "@/components/Home/HomeBanner/HomeBanner";
 
 
 export default function Home() {
   return (
     <div className="flex flex-col gap-6">
-      <MainSlide />
+      <HomeBanner />
       <AfterSlide />
       <EasierToChoose />
+      <Category />
+      <DealOfTheDaySection />
     </ div>
   );
 }

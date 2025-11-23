@@ -35,7 +35,7 @@ const EasierToChoose = () => {
     ];
 
     return (
-        <section className='easierToChoose p-2 md:p-4'>
+        <section className='easierToChoose p-2 md:p-3'>
             <EasierToChooseHeading prevRef={prevRef} nextRef={nextRef} />
 
             <div className='offers_slider'>
@@ -46,7 +46,7 @@ const EasierToChoose = () => {
                     breakpoints={{
                         576: { slidesPerView: 2 },
                         768: { slidesPerView: 4 },
-                        992: { slidesPerView: 6.5 },
+                        992: { slidesPerView: 6.5 }
                     }}
                     onBeforeInit={(swiper: any) => {
                         swiper.params.navigation.prevEl = prevRef.current;
