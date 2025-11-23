@@ -113,10 +113,7 @@ const ShopByBrand = () => {
                     </div>
                     <div className=' py-2 select-none rounded mt-2'>
                         <Swiper
-                            navigation={{
-                                prevEl: '.prev_brand',
-                                nextEl: '.next_brand',
-                            }}
+                            navigation={{ prevEl: '.prev_brand', nextEl: '.next_brand', }}
                             spaceBetween={13}
                             breakpoints={{
                                 414: {
