@@ -3,7 +3,10 @@ import DealOfTheDaySection from "@/components/Home/DealOfTheDaySection/DealOfThe
 import EasierToChoose from "@/components/Home/EasierToChoose/EasierToChoose";
 import Category from "@/components/Home/ExploreByCategory/Category";
 import HomeBanner from "@/components/Home/HomeBanner/HomeBanner";
+import DeliveryInfo from "@/components/Home/InstallAppInfo/DeliveryInfo";
+import InstallAppInfo from "@/components/Home/InstallAppInfo/InstallAppInfo";
 import ShopByBrand from "@/components/Home/ShopByBrand/ShopByBrand";
+import SpecialPackage from "@/components/Home/SpecialPackage/SpecialPackage";
 
 
 export default function Home() {
@@ -15,6 +18,8 @@ export default function Home() {
       <Category />
       <DealOfTheDaySection />
       <ShopByBrand />
+      <SpecialPackage />
+      <InstallAppInfo />
     </ div>
   );
 }
