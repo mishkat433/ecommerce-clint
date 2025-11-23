@@ -17,7 +17,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
           <div className="w-full md:w-[6%] bg-white h-screen sticky top-0 left-0 hidden md:block">
             <SidebarItems />
           </div>
-          <div className="w-full md:w-[94%]">
+          <div className="w-full md:w-[94%] bg-gray-100">
             <Header />
             <div className="">
               {children}
