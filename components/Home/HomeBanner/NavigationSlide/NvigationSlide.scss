@@ -20,14 +20,16 @@
   padding-left: 5rem;
 }
 
-.swiper-pagination-bullet {
-  width: 8px !important;
-  height: 8px !important;
-  background: rgba(255, 255, 255, 0.5) !important;
-}
+.dd {
+  .swiper-pagination-bullet {
+    width: 8px !important;
+    height: 8px !important;
+    background: rgba(255, 255, 255, 0.5) !important;
+  }
 
-.swiper-pagination-bullet-active {
-  width: 20px !important;
-  background: #fff !important;
-  border-radius: 20%;
+  .swiper-pagination-bullet-active {
+    width: 20px !important;
+    background: #fff !important;
+    border-radius: 20%;
+  }
 }
