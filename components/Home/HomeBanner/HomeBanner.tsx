@@ -1,6 +1,6 @@
 "use client"
 
-import ScrollSlide from "../NavigationSlide/ScrollSlide"
+import ScrollSlide from "./NavigationSlide/ScrollSlide"
 import FadeSlide from "./FadeSlide/FadeSlide"
 
 const HomeBanner = ({ }) => {

@@ -4,8 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import image1 from "../../../public/assets/slider1.png";
-import image2 from "../../../public/assets/goldMember.png";
+import image1 from "../../../../public/assets/slider1.png";
+import image2 from "../../../../public/assets/goldMember.png";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "./NvigationSlide.scss"
 
@@ -60,7 +60,7 @@ export default function HeroSlider() {
                 }}
                 modules={[Autoplay, Pagination, Navigation]}
 
-                className="mySwiper h-full rounded-lg overflow-hidden"
+                className="mySwiper h-full rounded-lg overflow-hidden dd"
             >
                 {fakeBannerSlides.map((slide) => (
                     <SwiperSlide key={slide.id}>
