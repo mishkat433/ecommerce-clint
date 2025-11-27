@@ -1,0 +1,171 @@
+.aide_main_wrapper {
+
+
+    .aide_sidebar_panel {
+        // transition: 0.7s;
+
+        .toggle_flip_content {}
+    }
+
+    .aide_main_content_panel {
+        position: relative;
+
+        .toggle_menu_wrapper {
+
+
+            .aide_toggle_menu {
+                // display: flex;
+                // position: fixed;
+                // width: 29px;
+                // height: 128px;
+                // top: 7.5rem;
+                // background-color: var(--aide_theme);
+                // color: #fff;
+                // z-index: 4;
+                // cursor: pointer;
+                // transition: 0.4s;
+
+                .openMenu {
+                    width: 7px;
+                    transition: 0.4s;
+                    position: absolute;
+                    top: 25%;
+                    left: 11px;
+                    transform: rotate(0deg);
+                }
+
+                p {
+                    padding: 0px 10px;
+                    font-size: 0.8rem;
+                    transform: rotate(-90deg);
+                    text-transform: uppercase;
+                    position: absolute;
+                    top: 55%;
+                    left: -15px;
+                }
+            }
+
+            .aide_toggle_menu {
+                left: 0;
+            }
+        }
+
+        main {
+            width: 100%;
+        }
+
+        .second_drawer_open {
+            transition: 1s;
+        }
+
+        .second_drawer_show,
+        .second_drawer_close {
+            background-color: #F4F4F4;
+            box-shadow: 4px 1px 6px rgba(0, 0, 0, 0.25);
+            padding: 10px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            z-index: 20;
+
+
+
+            .second_drawer_content_wrapper {
+                position: relative;
+
+                .second_toggle_menu_wrapper {
+                    position: absolute;
+                    top: 0;
+                    right: -10px;
+                    transition: 1s;
+
+                    .closeSideMenu {
+                        display: flex;
+                        position: fixed;
+                        width: 29px;
+                        height: 128px;
+                        top: 7.5rem;
+                        background-color: var(--aide_theme);
+                        box-shadow: 4px 1px 6px rgb(0 0 0 / 25%);
+                        color: #fff;
+                        z-index: 15;
+                        cursor: pointer;
+                        transition: 1s;
+
+                        .closeMenu {
+                            width: 7px;
+                            transition: 1s;
+                            position: absolute;
+                            top: 25%;
+                            left: 11px;
+                            transform: rotate(180deg);
+                        }
+
+                        p {
+                            padding: 0px 10px;
+                            font-size: 0.8rem;
+                            transform: rotate(-90deg);
+                            text-transform: uppercase;
+                            position: absolute;
+                            top: 55%;
+                            left: -14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .second_drawer_show {
+            left: 6%;
+
+            @media screen and (max-width: 896px) {
+                left: 35%;
+            }
+
+            @media screen and (max-width: 768px) {
+                left: 35%;
+            }
+        }
+
+        .second_drawer_close {
+            left: -100%;
+
+            @media screen and (max-width: 768px) {
+                left: -700px;
+            }
+
+            @media screen and (max-width: 896px) {
+                left: -1000px;
+            }
+        }
+    }
+}
+
+
+.after-black-bg {
+    &::after {
+        background-color: #000000ae;
+        content: '';
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0px;
+        overflow: hidden;
+        z-index: 10;
+    }
+}
+
+.after-black-bg2 {
+    &::after {
+        background-color: #00000007 !important;
+        content: '';
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0px;
+        overflow: hidden;
+        z-index: 10;
+    }
+}

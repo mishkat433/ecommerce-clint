@@ -1,19 +1,19 @@
-// import MainProductCard from "@/como/ProductCards/MainProductCard";
+'use client';
+
 import Link from "next/link";
-import { useEffect } from "react";
-import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
-// import { Navigation, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import { getProduct } from "../../../Redux/AllProductsSlice/AllProductsSlice";
-// import { useAppDispatch, useAppSelector } from "../../../Redux/app/hooks";
-import PreLoader from "../../Spinner/PreLoader";
 import moment from "moment";
 import { Navigation, Scrollbar } from "swiper/modules";
-
+import { RiArrowLeftSLine, RiArrowRightSLine, RiFlashlightFill } from "react-icons/ri";
+import MainProductCard from "@/components/Cards/MainProductCard";
+import productImage1 from "../../../public/assets/soybeanOil.png";
+import productImage2 from "../../../public/assets/milk.jpg";
+import productImage3 from "../../../public/assets/ChilliPowder.png";
+import productImage4 from "../../../public/assets/everyDay.png";
+import '../../Cards/MainProductCard.scss'
 
 const SuperFlashSale = () => {
-  // const { isLoading, products, error } = useAppSelector((state) => state.allProducts);
-  // const dispatch = useAppDispatch();
+
 
   const month = moment().format('MMMM')
 
@@ -33,27 +33,217 @@ const SuperFlashSale = () => {
   //     </h1>
   //   );
   // }
+
+  const fakeProduct = [
+    {
+      _id: '1',
+      itemName: 'Ultra Level Soyabin Oil 5 Litter',
+      price: 100,
+      thumbnailImage: {
+        url: productImage1
+      },
+      weightAndSize: {
+        unitOfMeasure: {
+          name: 'product'
+        },
+        weight: '34kg'
+      },
+      pricing: {
+        unitSellPrice: 512,
+        msrp: 112
+      },
+      discountable: {
+        discount: 5
+      },
+      brandAndCompany: {
+        company: 'Nestly',
+        brand: "Rupchanda"
+      },
+      websiteVisibilityStatus: {
+        status: 'published'
+      }
+    },
+    {
+      _id: '2',
+      itemName: 'Ultra Level Soyabin Oil 5 Litter',
+      price: 100,
+      thumbnailImage: {
+        url: productImage2
+      },
+      weightAndSize: {
+        unitOfMeasure: {
+          name: 'product'
+        },
+        weight: '34kg'
+      },
+      pricing: {
+        unitSellPrice: 512,
+        msrp: 112
+      },
+      discountable: {
+        discount: 5
+      },
+      brandAndCompany: {
+        company: 'Nestly',
+        brand: "Rupchanda"
+      },
+      websiteVisibilityStatus: {
+        status: 'published'
+      }
+    },
+    {
+      _id: '3',
+      itemName: 'Ultra Level Soyabin Oil 5 Litter',
+      price: 100,
+      thumbnailImage: {
+        url: productImage4
+      },
+      weightAndSize: {
+        unitOfMeasure: {
+          name: 'product'
+        },
+        weight: '34kg'
+      },
+      pricing: {
+        unitSellPrice: 512,
+        msrp: 112
+      },
+      discountable: {
+        discount: 5
+      },
+      brandAndCompany: {
+        company: 'Nestly',
+        brand: "Rupchanda"
+      },
+      websiteVisibilityStatus: {
+        status: 'published'
+      }
+    },
+    {
+      _id: '4',
+      itemName: 'Ultra Level Soyabin Oil 5 Litter',
+      price: 100,
+      thumbnailImage: {
+        url: productImage4
+      },
+      weightAndSize: {
+        unitOfMeasure: {
+          name: 'product'
+        },
+        weight: '34kg'
+      },
+      pricing: {
+        unitSellPrice: 512,
+        msrp: 112
+      },
+      discountable: {
+        discount: 5
+      },
+      brandAndCompany: {
+        company: 'Nestly',
+        brand: "Rupchanda"
+      },
+      websiteVisibilityStatus: {
+        status: 'published'
+      }
+    },
+    {
+      _id: '5',
+      itemName: 'Ultra Level Soyabin Oil 5 Litter',
+      price: 100,
+      thumbnailImage: {
+        url: productImage3
+      },
+      weightAndSize: {
+        unitOfMeasure: {
+          name: 'product'
+        },
+        weight: '34kg'
+      },
+      pricing: {
+        unitSellPrice: 512,
+        msrp: 112
+      },
+      discountable: {
+        discount: 5
+      },
+      brandAndCompany: {
+        company: 'Nestly',
+        brand: "Rupchanda"
+      },
+      websiteVisibilityStatus: {
+        status: 'published'
+      }
+    },
+    {
+      _id: '6',
+      itemName: 'Ultra Level Soyabin Oil 5 Litter',
+      price: 100,
+      thumbnailImage: {
+        url: productImage3
+      },
+      weightAndSize: {
+        unitOfMeasure: {
+          name: 'product'
+        },
+        weight: '34kg'
+      },
+      pricing: {
+        unitSellPrice: 512,
+        msrp: 112
+      },
+      discountable: {
+        discount: 5
+      },
+      brandAndCompany: {
+        company: 'Nestly',
+        brand: "Rupchanda"
+      },
+      websiteVisibilityStatus: {
+        status: 'published'
+      }
+    },
+    {
+      _id: '7',
+      itemName: 'Ultra Level Soyabin Oil 5 Litter',
+      price: 100,
+      thumbnailImage: {
+        url: productImage2
+      },
+      weightAndSize: {
+        unitOfMeasure: {
+          name: 'product'
+        },
+        weight: '34kg'
+      },
+      pricing: {
+        unitSellPrice: 512,
+        msrp: 112
+      },
+      discountable: {
+        discount: 5
+      },
+      brandAndCompany: {
+        company: 'Nestly',
+        brand: "Rupchanda"
+      },
+      websiteVisibilityStatus: {
+        status: 'published'
+      }
+    },
+  ]
+
   return (
-    <section className="easierToChoose container mx-auto my-10 md:mb-12 lg:mb-16">
-      <div className="easierToChooseHeading font-roboto">
-        <div className="heading_area select-none">
+    <section className=" p-2">
+      <div className="easierToChooseHeading font-roboto my-10">
+        <div className="heading_area select-none mb-2">
           <h2>
             {month} Super Flash Sale <span className="text-lg">⚡</span>
           </h2>
-          {/* <RiFlashlightFill className='text-2xl rotate-[20deg] text-yellow-600' /> */}
-          <div className="flex gap-1 md:gap-2 items-center ml-1 md:ml-5">
-            {" "}
-            Ends in
-            <p className="p-1 bg-aide-primary text-white leading-5 rounded-sm">  04</p>
-            {" "}
-            :
-            <p className="p-1 bg-aide-primary text-white leading-5 rounded-sm">
-              24
-            </p>{" "}
-            :
-            <p className="p-1 bg-aide-primary text-white leading-5 rounded-sm">
-              39
-            </p>
+          <div className="flex gap-1 md:gap-2 items-center ml-1 md:ml-5">  {" "}  Ends in
+            <p className="p-1 bg-teal-600 text-white leading-5 rounded-sm"> 04</p>  {" "}  :
+            <p className="p-1 bg-teal-600 text-white leading-5 rounded-sm"> 24  </p>{" "}  :
+            <p className="p-1 bg-teal-600 text-white leading-5 rounded-sm"> 39  </p>
           </div>
         </div>
         <div className="heading_right_side">
@@ -68,6 +258,7 @@ const SuperFlashSale = () => {
           </div>
         </div>
       </div>
+
       <div className="offers_slider font-inter">
         <div className=" product_grid_area">
           {/* {products.length === 0 && (
@@ -98,13 +289,12 @@ const SuperFlashSale = () => {
               },
             }}
             modules={[Scrollbar, Navigation]}
-            className="mySwiper"
-          >
-            {/* {products?.map((product: any) => ( */}
-            <SwiperSlide >
-              {/* <MainProductCard product={product} /> */}
-            </SwiperSlide>
-            {/* ))} */}
+            className="mySwiper" >
+            {fakeProduct?.map((product: any) => (
+              <SwiperSlide key={product._id}>
+                <MainProductCard product={product} />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>

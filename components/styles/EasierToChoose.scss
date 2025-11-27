@@ -1,0 +1,47 @@
+.easierToChoose {
+    padding: 0px 15px;
+    position: relative;
+    z-index: 0;
+
+    @media screen and (max-width: 768px) {
+        padding: 0px 15px;
+    }
+
+    .offers_slider {
+        padding: 14px 0px 0px;
+
+        img {
+            width: 100%;
+        }
+
+        .swiper-wrapper {
+            padding-bottom: 5px;
+        }
+
+        &:hover {
+
+            .swiper-horizontal>.swiper-scrollbar,
+            .swiper-scrollbar.swiper-scrollbar-horizontal {
+                opacity: 1;
+                transition: 0.3s;
+            }
+        }
+
+        .swiper-horizontal>.swiper-scrollbar,
+        .swiper-scrollbar.swiper-scrollbar-horizontal {
+            left: 0%;
+            bottom: 0;
+            width: 100%;
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+        .swiper-scrollbar {
+            background-color: #8f8f8f;
+        }
+
+        .swiper-scrollbar-drag {
+            background-color: var(--aide_theme)
+        }
+    }
+}

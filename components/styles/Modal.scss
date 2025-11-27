@@ -1,0 +1,49 @@
+.full-modal {
+    // animation-name: modal;
+    // animation-duration: 0.4s;
+    // transform: scale(1.1);
+
+    // @keyframes modal {
+    //     from {
+    //         transform: scale(0.3);
+    //     }
+
+    //     to {
+    //         transform: scale(1);
+    //     }
+    // }
+}
+
+.full-modal2 {
+    animation-name: modal;
+    animation-duration: 0.3s;
+    transition: 0.5s;
+
+    @keyframes modal {
+        from {
+            // height: 0px;
+            transform: scale(0.9);
+        }
+
+        to {
+            // height: 100%;
+            transform: scale(1);
+        }
+    }
+}
+
+.opacity-control {
+    animation-name: ss;
+    animation-duration: 0.1s;
+    transition: 0.5s;
+
+    // @keyframes ss {
+    //     from {
+    //         background-color: #00000060;
+    //     }
+
+    //     to {
+    //         background-color: #000000ae;
+    //     }
+    // }
+}
