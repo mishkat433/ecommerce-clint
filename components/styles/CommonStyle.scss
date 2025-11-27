@@ -1,0 +1,192 @@
+.swiper.swiper-initialized.swiper-horizontal.mySwipers {
+    padding-bottom: 10px;
+}
+
+.swiper.swiper-initialized.swiper-horizontal.mySwiper {
+    padding-bottom: 10px;
+}
+
+.slideing .swiper.swiper-initialized.swiper-horizontal.mySwiper .swiper-wrapper {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.scroll-none::-webkit-scrollbar {
+    display: none;
+}
+
+// authentication slide opacity
+.slide-opacity {
+    animation-name: slide;
+    animation-duration: 2s;
+}
+
+.checkout-height {
+    height: calc(100vh - 200px);
+}
+
+.checkout-height-sidebar {
+    height: calc(100vh - 140px);
+}
+
+@keyframes slide {
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.mobileNumber {
+    width: 100%;
+
+    input.form-control.mobileInput {
+        padding: 18px 25px;
+        margin-left: 0;
+        background-color: #eee;
+        border: 1px solid #d3d3d3;
+        width: 93%;
+        border-radius: 0px;
+        margin-left: 27px;
+    }
+}
+
+// input Date 
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(https://i.ibb.co/HYH3DB8/Calander-Icon.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+}
+
+.slick-list .slick-track {
+    display: flex;
+    gap: 12px;
+}
+
+
+.hovShow {
+    width: 0px;
+    transform: scale(0);
+}
+
+.hoverParent:focus>.hovShow {
+    width: 500px;
+    transform: scale(1);
+}
+
+ul.country-list {
+    text-align: left;
+}
+
+// cart Counter
+.wrap {
+    position: relative;
+}
+
+.wrapper {
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    transition: .4s;
+    position: absolute;
+    top: 22%;
+    right: 0;
+    // transition: all .5s;
+}
+
+.wrapper:hover {}
+
+
+// Order History Sorting
+// .orderSortChild {
+//     display: none;
+// }
+
+// .orderSortParent:focus-within .orderSortChild {
+//     display: block;
+// }
+
+
+
+
+// .wrap:hover .wrapper {
+//     width: 100px;
+//     border-radius: 10px;
+// }
+
+
+// .slick-slide.slick-current {
+//     margin-right: 0px;
+
+// }
+
+// .slick-slide.slick-active {
+//     margin-right: 12px;
+
+// }
+
+// customSelector start
+.css-1u9des2-indicatorSeparator {
+    display: none;
+}
+
+// .css-13cymwt-control:hover .css-1nmdiq5-menu {
+//     height: 200px;
+// }
+
+// .css-1nmdiq5-menu {
+//     height: 100px;
+//     overflow-y: auto;
+// }
+
+
+
+// customSelector end
+
+
+@media screen and (min-width:689px) and (max-width:992px) {
+    .mobileNumber {
+        input.form-control.mobileInput {
+            padding: 15px 25px;
+            margin-left: 0;
+            background-color: #eee;
+            border: 1px solid #d3d3d3;
+            width: 88%;
+            border-radius: 0px;
+            margin-left: 27px;
+        }
+    }
+}
+
+
+@media screen and (max-width:576px) {
+    // .slideing .swiper.swiper-initialized.swiper-horizontal.mySwiper .swiper-wrapper {
+    //     display: flex;
+    // }
+
+    .mobileNumber {
+        input.form-control.mobileInput {
+            padding: 12px 25px;
+            margin-left: 0;
+            background-color: #eee;
+            border: 1px solid #d3d3d3;
+            width: 91%;
+            border-radius: 0px;
+            margin-left: 27px;
+        }
+    }
+
+    .slick-list .slick-track {
+        display: flex;
+        gap: 0px;
+    }
+}

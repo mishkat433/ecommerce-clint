@@ -19,12 +19,12 @@ import ArrowRight from "@/components/Icons/ArrowRight";
 const SpecialPackage = () => {
 
     const handleProgress = (progress: any) => {
-        const bar = document.getElementById("progressBar");
-        if (!bar) return;
+        const proBar = document.getElementById("progressBar");
+        if (!proBar) return;
 
-        const maxHeight = 120;
+        const maxHeight = 360;
 
-        bar.style.top = `${progress * (maxHeight - 80)}px`;
+        proBar.style.top = `${progress * (maxHeight - 80)}px`;
     };
 
     const fakeSpecialPackagesRight = [
@@ -138,16 +138,13 @@ const SpecialPackage = () => {
                                 </Swiper>
 
                             </div>
-
-                            {/* Right side: Progress + Buttons */}
                             <div className="flex flex-col justify-between mt-6 items-center">
 
-                                {/* Progress track */}
                                 <div className="h-full w-0.5 bg-gray-300 relative overflow-hidden">
                                     <span id="progressBar" className="h-20 w-2 bg-teal-600 absolute top-0 left-1/2 -translate-x-1/2 rounded"></span>
                                 </div>
 
-                                {/* Navigation */}
+                                {/* Navigation bar*/}
                                 <div className="flex flex-col gap-[13px] mb-2 py-2">
                                     <div className=" cursor-pointer text-[#07484A] w-10 h-10 bg-[#E0EFF6] flex justify-center items-center rounded-full prev_sps">
                                         <span className="w-3 rotate-90"><ArrowRight /></span>

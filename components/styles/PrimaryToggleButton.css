@@ -1,0 +1,17 @@
+.toggleContainer {
+}
+.toggleItem {
+  transition: 1s;
+}
+
+.primaryToggleCheckbox ~ .toggleItem {
+  transform: translateX(100%);
+}
+/* @keyframes toggleAnimate {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+} */

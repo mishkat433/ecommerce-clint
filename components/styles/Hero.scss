@@ -1,0 +1,103 @@
+.hero_section_wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    margin-bottom: 15px;
+    // align-items: center;
+
+    @media screen and (max-width: 576px) {
+        padding: 0px 15px;
+    }
+
+    .hero_slider {
+        grid-column: span 9 / span 12;
+        z-index: 0;
+
+        @media screen and (max-width: 991px) {
+            grid-column: span 12 / span 12;
+        }
+    }
+
+    .hero_ads {
+        grid-column: span 3 / span 12;
+
+        @media screen and (max-width: 991px) {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
+
+/* Swipper Slider Edit */
+.swiper-pagination {
+    text-align: left;
+    bottom: 40px;
+    left: 90px;
+
+    @media screen and (max-width: 576px) {
+        left: 40px;
+    }
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 20px;
+    left: -24.5rem;
+    width: 100%;
+
+    @media screen and (min-width:689px) and (max-width:992px) {
+        left: -15rem;
+    }
+
+    @media screen and (max-width:688px) {
+        left: 0;
+    }
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #ffffff;
+    width: 16px;
+    border-radius: 2px;
+}
+
+span.swiper-pagination-bullet {
+    background-color: #ffffff;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    display: none;
+}
+
+.swiper:hover .swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    display: block;
+    height: 20px;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    display: none;
+
+}
+
+.swiper:hover .swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    display: block;
+    height: 20px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    font-size: 20px !important;
+    font-weight: bold;
+}
